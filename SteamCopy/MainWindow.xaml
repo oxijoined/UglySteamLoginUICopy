@@ -1,0 +1,75 @@
+﻿<Window x:Class="SteamCopy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SteamCopy"
+        mc:Ignorable="d" Height="471" Width="705" Background="#FF212328" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Window.Clip>
+        <RectangleGeometry Rect="0,0,705,471" RadiusX="8" RadiusY="8"/>
+    </Window.Clip>
+    <Grid>
+        <RichTextBox Margin="42,114,263,317" Background="#FF393C44" Width="400" BorderBrush="{x:Null}">
+            <RichTextBox.Clip>
+                <RectangleGeometry Rect="0,0,400,40" RadiusX="5" RadiusY="5"/>
+            </RichTextBox.Clip>
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Margin="42,191,263,240" Background="#FF393C44" Width="400" BorderBrush="{x:Null}">
+            <RichTextBox.Clip>
+                <RectangleGeometry Rect="0,0,400,40" RadiusX="5" RadiusY="5"/>
+            </RichTextBox.Clip>
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="107,282,0,0" VerticalAlignment="Top" Width="270" Height="50" Foreground="White" FontSize="18" FontWeight="Bold" Click="Button_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                    <GradientStop Color="#FF06BFFF"/>
+                    <GradientStop Color="#FF2D73FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Clip>
+                <RectangleGeometry Rect="0,0,270,50" RadiusX="5" RadiusY="5"/>
+            </Button.Clip>
+        </Button>
+        <CheckBox Margin="42,247,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="15" Height="15" Background="#FF393C44" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="1.75" ScaleY="1.75"></ScaleTransform>
+            </CheckBox.LayoutTransform>
+            <CheckBox.Clip>
+                <RectangleGeometry Rect="0,0,15,15" RadiusX="5" RadiusY="5"/>
+            </CheckBox.Clip>
+
+        </CheckBox>
+        <Label Content="Запомнить меня" HorizontalAlignment="Left" Margin="68,247,0,0" VerticalAlignment="Top" Width="121" Foreground="#FFAFAFAF"/>
+        <Label HorizontalAlignment="Left" Margin="42,381,0,0" VerticalAlignment="Top" Width="296" Foreground="#FFAFAFAF" FontSize="13">
+            <TextBlock TextDecorations="Underline" FontSize="13" FontFamily="SegouUI">Помогите, я не могу войти в свой аккаунт
+            </TextBlock>
+        </Label>
+        <Label HorizontalAlignment="Left" Margin="502,381,0,0" VerticalAlignment="Top" Width="299" Foreground="#FFAFAFAF" FontSize="13">
+            <TextBlock TextDecorations="Underline" FontSize="13" FontFamily="SegouUI">Создайте бесплатный аккаунт
+            </TextBlock>
+        </Label>
+        <Label Content="Нет аккаунта Steam?" HorizontalAlignment="Left" Margin="382,380,0,0" VerticalAlignment="Top" Width="122" Foreground="#FFAFAFAF"/>
+        <Label Content="ВОЙТИ, ИСПОЛЬЗУЯ ИМЯ АККАУНТА" HorizontalAlignment="Left" Margin="37,86,0,0" VerticalAlignment="Top" Width="252" Foreground="#FF1999FF" FontSize="14"/>
+        <Label Content="ПАРОЛЬ" HorizontalAlignment="Left" Margin="37,163,0,0" VerticalAlignment="Top" Width="237" Foreground="#FFAFAFAF" FontSize="14"/>
+        <Label Content="ИЛИ ПРИ ПОМОЩИ QR-КОДА" HorizontalAlignment="Left" Margin="468,80,0,0" VerticalAlignment="Top" Width="252" Foreground="#FF1999FF" FontSize="14"/>
+        <Rectangle HorizontalAlignment="Left" Height="200" Margin="474,114,0,0" VerticalAlignment="Top" Width="200" Fill="White" RadiusX="15" RadiusY="15"/>
+        <Image HorizontalAlignment="Left" Height="178" Margin="485,125,0,0" VerticalAlignment="Top" Width="178" Source="/qr-code.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="474,320,0,0" TextWrapping="Wrap" Text="Используйте мобильное 
+                   приложение Steam, чтобы войти с помощью QR-кода" VerticalAlignment="Top" Foreground="#FFAFAFAF" TextAlignment="Center" FontSize="13"/>
+        <Image HorizontalAlignment="Left" Height="135" Margin="37,41,0,0" VerticalAlignment="Top" Width="127" Source="/image (1).png"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="673,6,0,0" VerticalAlignment="Top" Width="25" Source="/image (2).png" MouseDown="Exit"/>
+        <Rectangle HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="668" MouseDown="Rectangle_MouseDown" Fill="#FF212328"/>
+
+    </Grid>
+</Window>
+ 
